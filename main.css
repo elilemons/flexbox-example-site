@@ -1,0 +1,95 @@
+@import './secondary.css';
+
+/* #Layout */
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  background-color: var(--whiteish);
+}
+/* #Button */
+.collapse {
+  transform: scaleY(0);
+}
+/* #Shapes */
+.shape {
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+
+  font-size: 2em;
+  color: var(--whiteish);
+  border-top: var(--weird-border);
+  border-left: var(--weird-border);
+}
+.square {
+  width: 5rem;
+}
+.rectangle {
+  width: 10rem;
+}
+
+/*Flex styles*/
+.flexbox, .box {
+  display: flex;
+}
+
+.box-inline {
+  display: inline-flex;
+}
+.row {
+  flex-direction: row;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.column {
+  flex-direction: column;
+}
+.column-reverse {
+  flex-direction: column-reverse;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-flow-row-reverse-wrap-reverse {
+  flex-flow: row-reverse wrap-reverse;
+}
+.justify-flex-start {
+  justify-content: flex-start;
+}
+.justify-flex-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+.align-items-flex-start {
+  align-items: flex-start;
+}
+.align-items-flex-end {
+  align-items: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+.align-items-base-line {
+  align-items: baseline;
+}

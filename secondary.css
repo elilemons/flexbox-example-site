@@ -1,0 +1,50 @@
+:root {
+  --whiteish: #E6EBE0;
+  --teal: #51A3A3;
+  --reddish: #ED6A5A;
+  --light-blue: #9BC1BC;
+  --blueish-purple: #5D576B;
+  --purple: #75485E;
+  --tan: #c6ad94;
+  --dark-tan: #7f6f5f;
+  --weird-border: 10px solid black;
+}
+.bg-teal { background-color: var(--teal); }
+.bg-reddish { background-color: var(--reddish); }
+.bg-light-blue { background-color: var(--light-blue); }
+.bg-blueish-purple { background-color: var(--blueish-purple); }
+.bg-purple { background-color: var(--purple); }
+
+.box {
+  padding: 5em 3em;
+  margin-bottom: 5px;
+
+  border: 5px dashed var(--dark-tan);
+
+  /*
+    This fancy CSS allows us to color the padding and content seperately
+    Found here: https://stackoverflow.com/questions/14628601/can-i-add-background-color-only-for-padding
+    In the answer by Muhammad Umer
+  */
+  background-color: var(--tan);
+  background-image:
+    linear-gradient(to bottom,
+      rgba(127, 111, 95) 0%,
+      rgba(127, 111, 95) 100%),
+    linear-gradient(to bottom,
+      rgba(198, 173, 148) 0%,
+      rgba(198, 173, 148) 100%);
+  background-clip: content-box, padding-box;
+}
+
+.box.long {
+  height: 20rem;
+}
+
+.box.column.long {
+  height: 40rem;
+}
+
+section {
+  display: none;
+}
