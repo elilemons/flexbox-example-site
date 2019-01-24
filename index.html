@@ -13,11 +13,12 @@
 <body>
   <!-- Container -->
   <nav class="bottom-nav">
-    <span class="nav-item"><</span>
+    <span title="Navigation" class="nav-item text-yellow"><</span>
     <a title="View the welcome message again" class="nav-item" id="showWelcomeMessage" onclick="showWelcomeMessage()">What?</a>
     <a class="nav-item" id="hideAll" onclick="hideAll()">Hide All Sections</a>
     <a class="nav-item" id="showAll" onclick="showAll()">Show All Sections</a>
     <a class="nav-item" id="scrollTop" onclick="scrollToTop()">Scroll To Top</a>
+    <a class="nav-item text-yellow" href="https://lisa-lemons.com" target="_blank">&copy; 2019 Lisa Lemons</a>
   </nav>
   <div class="container">
     <!-- Display -->
@@ -747,13 +748,16 @@
         This is to help you visually understand how the <strong>content</strong> is flexed in its container.
       </p>
       <p>Whenever you're ready, close this modal to get started! </p>
+      <label for="no-show-again">
+        <input id="no-show-again" type="checkbox"  onclick="storeNoShowWelcomeAgain(this)"/>Don't show this again
+      </label>
   </div>
   <script>
     (function () {
       setupColors();
       setupRectangles();
       hideAll();
-      document.getElementById('showWelcomeMessage').click();
+      checkNoShowWelcomeAgain();
     })();
   </script>
 </body>

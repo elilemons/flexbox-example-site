@@ -36,7 +36,6 @@ function hideAll() {
   let buttons = document.getElementsByTagName('button');
 
   for (let button of buttons) {
-    console.log('in HideAll button.style.display: ', button.innerText)
     if (button.innerText === 'Hide') {      
       button.click();
     }
@@ -50,7 +49,6 @@ function showAll() {
   let buttons = document.getElementsByTagName('button');
 
   for (let button of buttons) {
-    console.log('in ShowAll button.style.display: ', button.innerText)
     if (button.innerText === 'Show') {
       button.click();
     } 
@@ -72,4 +70,25 @@ function showWelcomeMessage() {
 function closeWelcomeMessage() {
   document.body.classList.remove('backdrop');
   document.getElementById('welcomeMessage').style.display = 'none';
+}
+
+function storeNoShowWelcomeAgain(checkbox) {
+  let noShowWelcomeAgain;
+  noShowWelcomeAgain = checkbox.checked;
+  localStorage.setItem('noShowWelcomeAgain', JSON.stringify(noShowWelcomeAgain));
+}
+
+function checkNoShowWelcomeAgain() {
+  if (typeof localStorage.getItem('noShowWelcomeAgain') !== 'undefined' 
+      && localStorage.getItem('noShowWelcomeAgain') !== null) {
+    let noShowWelcomeAgain = JSON.parse(localStorage.getItem('noShowWelcomeAgain'));
+    document.getElementById('no-show-again').checked = noShowWelcomeAgain;
+    if (noShowWelcomeAgain) {
+      closeWelcomeMessage();
+    } else {
+      showWelcomeMessage();
+    }
+  } else {
+    showWelcomeMessage();
+  }
 }

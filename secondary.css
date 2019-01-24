@@ -17,12 +17,14 @@ html, body { height: 100%; }
   --tan: #c6ad94;
   --dark-tan: #7f6f5f;
   --weird-border: 10px solid black;
+  --lisa-yellow: #FFBE00 !important;
 }
 .bg-teal { background-color: var(--teal); }
 .bg-reddish { background-color: var(--reddish); }
 .bg-light-blue { background-color: var(--light-blue); }
 .bg-blueish-purple { background-color: var(--blueish-purple); }
 .bg-purple { background-color: var(--purple); }
+.text-yellow { color: var(--lisa-yellow); }
 .box {
   padding: 5em 3em;
   margin-bottom: 5px;
@@ -95,6 +97,10 @@ html, body { height: 100%; }
   padding: 0 1em;
   cursor: pointer;
   color: var(--teal);
+  text-decoration: none;
+}
+.nav-item.text-yellow {
+  color: var(--lisa-yellow);
 }
 #welcomeMessage {
   position: fixed;
@@ -117,7 +123,7 @@ html, body { height: 100%; }
 }
 .backdrop {
   background-color: rgba(0,0,0,.8);
-  position: absolute;
+  position: fixed;
   width: 100%;
   overflow: hidden;
 }
@@ -126,4 +132,7 @@ html, body { height: 100%; }
 }
 .backdrop > button {
   pointer-events: none;
+}
+.backdrop > .bottom-nav {
+  opacity: .3;
 }
