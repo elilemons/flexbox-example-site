@@ -58,3 +58,18 @@ function showAll() {
   document.getElementById('showAll').style.display = 'none';
   document.getElementById('hideAll').style.display = 'inline-block';
 }
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function showWelcomeMessage() {
+  document.body.classList.add('backdrop');
+  document.getElementById('welcomeMessage').style.display = 'block';
+}
+
+function closeWelcomeMessage() {
+  document.body.classList.remove('backdrop');
+  document.getElementById('welcomeMessage').style.display = 'none';
+}

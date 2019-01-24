@@ -3,10 +3,14 @@
   You're welcome to browse it and try it, but know we haven't covered
   a lot of these topics in class!
 */
+* { box-sizing: border-box; }
+body { margin: 0; }
+html, body { height: 100%; }
 :root { /* Set up CSS Variables */
   --whiteish: #E6EBE0;
   --teal: #51A3A3;
   --reddish: #ED6A5A;
+  --darker-reddish: #D1301B;
   --light-blue: #9BC1BC;
   --blueish-purple: #5D576B;
   --purple: #75485E;
@@ -19,8 +23,6 @@
 .bg-light-blue { background-color: var(--light-blue); }
 .bg-blueish-purple { background-color: var(--blueish-purple); }
 .bg-purple { background-color: var(--purple); }
-
-
 .box {
   padding: 5em 3em;
   margin-bottom: 5px;
@@ -74,4 +76,54 @@
 }
 .short > .shape.flex-shrink {
   min-height: 0;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  right: -350px;
+  background: white;
+  height: 60px;
+  padding: 1rem 3rem;
+  border-top: var(--weird-border);
+  border-left: var(--weird-border);
+  transition: right ease .5s;
+}
+.bottom-nav:hover {
+  right: 0;
+}
+.bottom-nav > .nav-item {
+  padding: 0 1em;
+  cursor: pointer;
+  color: var(--teal);
+}
+#welcomeMessage {
+  position: fixed;
+  top: 50%;
+  z-index: 100;
+  padding: 1em 3em;
+  margin: 0 3em;
+  
+  background: white;
+  transform: translateY(-50%);
+}
+.close-welcome-message {
+  float: right;
+  cursor: pointer;
+  color: var(--reddish);
+  font-size: 3em;
+}
+.close-welcome-message:hover {
+  color: var(--darker-reddish);
+}
+.backdrop {
+  background-color: rgba(0,0,0,.8);
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.backdrop > .container {
+  opacity: .3;
+}
+.backdrop > button {
+  pointer-events: none;
 }

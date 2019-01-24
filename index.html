@@ -13,8 +13,11 @@
 <body>
   <!-- Container -->
   <nav class="bottom-nav">
-    <a id="hideAll" href="#" onclick="hideAll()">Hide All Sections</a href="#">
-    <a id="showAll" href="#" onclick="showAll()">Show All Sections</a href="#">
+    <span class="nav-item"><</span>
+    <a title="View the welcome message again" class="nav-item" id="showWelcomeMessage" onclick="showWelcomeMessage()">What?</a>
+    <a class="nav-item" id="hideAll" onclick="hideAll()">Hide All Sections</a>
+    <a class="nav-item" id="showAll" onclick="showAll()">Show All Sections</a>
+    <a class="nav-item" id="scrollTop" onclick="scrollToTop()">Scroll To Top</a>
   </nav>
   <div class="container">
     <!-- Display -->
@@ -719,12 +722,38 @@
       </div>
     </section>
   </div><!-- ./ Container -->
-
+  <div id="welcomeMessage">
+      <span title="Click to close this modal!" class="close-welcome-message" onclick="closeWelcomeMessage()">x</span>
+      <p>
+        <em>Hello there!</em>
+      </p>
+      <p>
+        This page was designed against the 
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">wonderful tutorial from CSS-Tricks about Flexbox.</a> 
+        This takes all of their illustrations and puts them into actual code. 
+      </p>
+      
+      <p>
+        You can inspect with dev tools to see how each item is built and flexed. Try with the box below!
+      </p>
+      <div class="box">
+          <div class="shape square">1</div>
+          <div class="shape square">2</div>
+          <div class="shape square">3</div>
+        </div>      
+      <p>
+        The darker color of the container represents the <strong>content</strong> of the box model, 
+        where the lighter part is the <strong>padding</strong>. 
+        This is to help you visually understand how the <strong>content</strong> is flexed in its container.
+      </p>
+      <p>Whenever you're ready, close this modal to get started! </p>
+  </div>
   <script>
     (function () {
       setupColors();
       setupRectangles();
       hideAll();
+      document.getElementById('showWelcomeMessage').click();
     })();
   </script>
 </body>
