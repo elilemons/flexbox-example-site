@@ -1,11 +1,11 @@
-/* 
-  This is the magic behind the curtain. 
+/*
+  This is the magic behind the curtain.
   You're welcome to browse it and try it, but know we haven't covered
   a lot of these topics in class!
 */
 * { box-sizing: border-box; }
 body { margin: 0; }
-html, body { height: 100%; }
+html { height: 100%; }
 :root { /* Set up CSS Variables */
   --whiteish: #E6EBE0;
   --teal: #51A3A3;
@@ -84,11 +84,11 @@ html, body { height: 100%; }
   padding: 1rem 3rem;
   border-top: var(--weird-border);
   border-left: var(--weird-border);
-  
+
   position: fixed;
   bottom: 0;
-  right: -350px;
-  
+  right: -592px;
+
   background: white;
   transition: right ease .5s;
 }
@@ -110,7 +110,7 @@ html, body { height: 100%; }
   z-index: 100;
   padding: 1em 3em;
   margin: 0 3em;
-  
+
   background: white;
   transform: translateY(-50%);
 }
@@ -118,7 +118,7 @@ html, body { height: 100%; }
   float: right;
   cursor: pointer;
   color: var(--reddish);
-  font-size: 3em;
+  font-size: 2em;
 }
 .close-welcome-message:hover {
   color: var(--darker-reddish);
@@ -127,6 +127,7 @@ html, body { height: 100%; }
   background-color: rgba(0,0,0,.8);
   position: fixed;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .backdrop > .container {
