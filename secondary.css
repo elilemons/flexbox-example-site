@@ -3,7 +3,7 @@
   You're welcome to browse it and try it, but know we haven't covered
   a lot of these topics in class!
 */
-:root {
+:root { /* Set up CSS Variables */
   --whiteish: #E6EBE0;
   --teal: #51A3A3;
   --reddish: #ED6A5A;
@@ -19,6 +19,7 @@
 .bg-light-blue { background-color: var(--light-blue); }
 .bg-blueish-purple { background-color: var(--blueish-purple); }
 .bg-purple { background-color: var(--purple); }
+
 
 .box {
   padding: 5em 3em;

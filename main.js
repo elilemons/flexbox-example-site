@@ -31,3 +31,30 @@ function hide(button, elementId) {
     }
   }
 }
+
+function hideAll() {
+  let buttons = document.getElementsByTagName('button');
+
+  for (let button of buttons) {
+    console.log('in HideAll button.style.display: ', button.innerText)
+    if (button.innerText === 'Hide') {      
+      button.click();
+    }
+  }
+
+  document.getElementById('hideAll').style.display = 'none';
+  document.getElementById('showAll').style.display = 'inline-block';
+}
+
+function showAll() {
+  let buttons = document.getElementsByTagName('button');
+
+  for (let button of buttons) {
+    console.log('in ShowAll button.style.display: ', button.innerText)
+    if (button.innerText === 'Show') {
+      button.click();
+    } 
+  }
+  document.getElementById('showAll').style.display = 'none';
+  document.getElementById('hideAll').style.display = 'inline-block';
+}

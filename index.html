@@ -12,6 +12,10 @@
 
 <body>
   <!-- Container -->
+  <nav class="bottom-nav">
+    <a id="hideAll" href="#" onclick="hideAll()">Hide All Sections</a href="#">
+    <a id="showAll" href="#" onclick="showAll()">Show All Sections</a href="#">
+  </nav>
   <div class="container">
     <!-- Display -->
     <h1>Display <button onclick="hide(this, 'display')">Hide</button></h1>
@@ -720,6 +724,7 @@
     (function () {
       setupColors();
       setupRectangles();
+      hideAll();
     })();
   </script>
 </body>
