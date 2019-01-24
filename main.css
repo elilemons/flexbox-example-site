@@ -1,5 +1,7 @@
 @import './secondary.css';
-
+* {
+  box-sizing: border-box;
+}
 /* #Layout */
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +14,7 @@ html {
 }
 /* #Shapes */
 .shape {
-  height: 5rem;
+  min-height: 5rem; /* Using min-height ensures any 'stretch' properties will actually stretch the element */
 
   display: flex;
   justify-content: center;
@@ -27,10 +29,6 @@ html {
 .square {
   width: 5rem;
 }
-.rectangle {
-  width: 10rem;
-}
-
 /*Flex styles*/
 .flexbox, .box {
   display: flex;
@@ -90,6 +88,48 @@ html {
 .align-items-stretch {
   align-items: stretch;
 }
-.align-items-base-line {
+.align-items-baseline {
   align-items: baseline;
+}
+.align-content-flex-start {
+  align-content: flex-start
+}
+.align-content-flex-end {
+  align-content: flex-end;
+}
+.align-content-center {
+  align-content: center;
+}
+.align-content-stretch {
+  align-content: stretch;
+}
+.align-content-space-between {
+  align-content: space-between;
+}
+.align-content-space-around {
+  align-content: space-around;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.flex-shrink {
+  flex-shrink: 1 !important;
+}
+.flex-basis-50 {
+  flex-basis: 50%;
+}
+.flex-me-50 {
+  flex: 1 1 50%;
+}
+.align-self-flex-end {
+  align-self: flex-end;
 }

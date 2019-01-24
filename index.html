@@ -3,15 +3,10 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Flexbox Examples</title>
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-        type="text/css"
-        media="screen"
-        href="main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
 </head>
 
@@ -215,136 +210,508 @@
       </div>
 
 
-      <h2 title="Justify Content">Flex Start - Column</h2>
-      <div class="box column long justify-flex-start">
+      <h2 title="Justify Content">Justify Content: Flex Start - Column</h2>
+      <div class="box column justify-flex-start">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+      </div>
+
+      <h2 title="Justify Content">Justify Content: Flex End - Column</h2>
+      <div class="box column justify-flex-end">
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
         <div class="shape rectangle">1</div>
         <div class="shape square">2</div>
         <div class="shape rectangle">3</div>
       </div>
 
-      <h2 title="Justify Content">Flex End - Column</h2>
-      <div class="box column long justify-flex-end">
+      <h2 title="Justify Content">Justify Content: Center - Column</h2>
+      <div class="box column justify-center">
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
         <div class="shape rectangle">1</div>
         <div class="shape square">2</div>
         <div class="shape rectangle">3</div>
+        <div class="empty-space"></div> <!-- For visual clarification of this concept, you would not need this space otherwise -->
       </div>
 
-      <h2 title="Justify Content">Center - Column</h2>
-      <div class="box column long justify-center">
-        <div class="shape rectangle">1</div>
-        <div class="shape square">2</div>
-        <div class="shape rectangle">3</div>
-      </div>
-
-      <h2 title="Justify Content">Space Between - Column</h2>
+      <h2 title="Justify Content">Justify Content: Space Between - Column</h2>
       <div class="box column long justify-space-between">
         <div class="shape rectangle">1</div>
         <div class="shape square">2</div>
         <div class="shape rectangle">3</div>
       </div>
-      <h2 title="Justify Content">Space Around - Column</h2>
+      <h2 title="Justify Content">Justify Content: Space Around - Column</h2>
       <div class="box column long justify-space-around">
         <div class="shape rectangle">1</div>
         <div class="shape square">2</div>
         <div class="shape rectangle">3</div>
       </div>
-      <h2 title="Justify Content">Space Evenly - Column</h2>
+      <h2 title="Justify Content">Justify Content: Space Evenly - Column</h2>
       <div class="box column long justify-space-evenly">
         <div class="shape rectangle">1</div>
         <div class="shape square">2</div>
         <div class="shape rectangle">3</div>
       </div>
     </section>
-
     <h1>Align Items <button onclick="hide(this, 'alignItems')">Hide</button></h1>
     <section id="alignItems">
-      <h2 title="Align Items">Flex Start - Row</h2>
-      <div class="box long align-items-flex-start">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+      <h2 title="Align Items">Align Items: Flex Start - Row</h2>
+      <div class="box align-items-flex-start">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
       </div>
 
-      <h2 title="Align Items">Flex End - Row</h2>
-      <div class="box long align-items-flex-end">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+      <h2 title="Align Items">Align Items: Flex End - Row</h2>
+      <div class="box align-items-flex-end">
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
       </div>
 
-      <h2 title="Align Items">Center - Row</h2>
-      <div class="box long align-items-center">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+      <h2 title="Align Items">Align Items: Center - Row</h2>
+      <div class="box align-items-center">
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="empty-space"></div> <!-- For visual clarification of this concept, you would not need this space otherwise -->
       </div>
 
-      <h2 title="Align Items">Stretch - Row</h2>
-      <div class="box long align-items-stretch">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+      <h2 title="Align Items">Align Items: Stretch - Row</h2>
+      <div class="box align-items-stretch">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
       </div>
-      <h2 title="Align Items">Space Around - Row</h2>
-      <div class="box long align-items-baseline">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+      <h2 title="Align Items">Align Items: Baseline - Row</h2>
+      <div class="box align-items-baseline">
+        <div class="shape rectangle long-rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle long-rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle long-rectangle">5</div>
       </div>
 
 
-      <h2 title="Align Items">Flex Start - Column</h2>
+      <h2 title="Align Items">Align Items: Flex Start - Column</h2>
       <div class="box column align-items-flex-start">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
       </div>
 
-      <h2 title="Align Items">Flex End - Column</h2>
+      <h2 title="Align Items">Align Items: Flex End - Column</h2>
       <div class="box column align-items-flex-end">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
       </div>
 
-      <h2 title="Align Items">Center - Column</h2>
+      <h2 title="Align Items">Align Items: Center - Column</h2>
       <div class="box column align-items-center">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
       </div>
 
-      <h2 title="Align Items">Stretch - Column</h2>
+      <h2 title="Align Items">Align Items: Stretch - Column</h2>
       <div class="box column align-items-stretch">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
       </div>
-      <h2 title="Align Items">Space Around - Column</h2>
+      <h2 title="Align Items">Align Items: Baseline - Column</h2>
       <div class="box column align-items-baseline">
-          <div class="shape rectangle">1</div>
-          <div class="shape square">2</div>
-          <div class="shape rectangle">3</div>
-          <div class="shape square">4</div>
-          <div class="shape rectangle">5</div>
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+      </div>
+    </section>
+
+    <h1>Align Content <button onclick="hide(this, 'alignContent')">Hide</button></h1>
+    <section id="alignContent">
+
+      <h2 title="Align Content">Align Content: Flex Start - Row</h2>
+      <div class="box wrap align-content-flex-start">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+        <div class="shape rectangle">9</div>
+        <div class="shape square">10</div>
+        <div class="shape rectangle">11</div>
+        <div class="shape square">12</div>
+        <div class="shape rectangle">13</div>
+        <div class="shape square">14</div>
+        <div class="shape rectangle">15</div>
+        <div class="shape square">16</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Flex End - Row</h2>
+      <div class="box wrap align-content-flex-end">
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+        <div class="shape rectangle">9</div>
+        <div class="shape square">10</div>
+        <div class="shape rectangle">11</div>
+        <div class="shape square">12</div>
+        <div class="shape rectangle">13</div>
+        <div class="shape square">14</div>
+        <div class="shape rectangle">15</div>
+        <div class="shape square">16</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Center - Row</h2>
+      <div class="box wrap align-content-center">
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+        <div class="shape rectangle">9</div>
+        <div class="shape square">10</div>
+        <div class="shape rectangle">11</div>
+        <div class="shape square">12</div>
+        <div class="shape rectangle">13</div>
+        <div class="shape square">14</div>
+        <div class="shape rectangle">15</div>
+        <div class="shape square">16</div>
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+      </div>
+
+      <h2 title="Align Content">Align Content: Stretch - Row</h2>
+      <div class="box long wrap align-content-stretch">
+        <div class="shape rectangle long-rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle long-rectangle">3</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Space Between - Row</h2>
+      <div class="box wrap align-content-space-between row">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Space Around - Row</h2>
+      <div class="box wrap align-content-space-around row">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Flex Start - Row</h2>
+      <div class="box wrap align-content-flex-start">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+        <div class="shape rectangle">9</div>
+        <div class="shape square">10</div>
+        <div class="shape rectangle">11</div>
+        <div class="shape square">12</div>
+        <div class="shape rectangle">13</div>
+        <div class="shape square">14</div>
+        <div class="shape rectangle">15</div>
+        <div class="shape square">16</div>
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+      </div>
+
+      <h2 title="Align Content">Align Content: Flex End - Row</h2>
+      <div class="box wrap align-content-flex-end">
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+        <div class="shape rectangle">9</div>
+        <div class="shape square">10</div>
+        <div class="shape rectangle">11</div>
+        <div class="shape square">12</div>
+        <div class="shape rectangle">13</div>
+        <div class="shape square">14</div>
+        <div class="shape rectangle">15</div>
+        <div class="shape square">16</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Center - Row</h2>
+      <div class="box wrap align-content-center">
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+        <div class="shape rectangle">9</div>
+        <div class="shape square">10</div>
+        <div class="shape rectangle">11</div>
+        <div class="shape square">12</div>
+        <div class="shape rectangle">13</div>
+        <div class="shape square">14</div>
+        <div class="shape rectangle">15</div>
+        <div class="shape square">16</div>
+        <div class="empty-space"></div><!-- For visual clarification of this concept, you would not need this space otherwise -->
+      </div>
+
+      <h2 title="Align Content">Align Content: Stretch - Row</h2>
+      <div class="box long wrap align-content-stretch">
+        <div class="shape rectangle long-rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle long-rectangle">3</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Space Between - Row</h2>
+      <div class="box wrap align-content-space-between row">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+      </div>
+
+
+      <h2 title="Align Content">Align Content: Space Around - Row</h2>
+      <div class="box wrap align-content-space-around row">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+        <div class="shape square">4</div>
+        <div class="shape rectangle">5</div>
+        <div class="shape square">6</div>
+        <div class="shape rectangle">7</div>
+        <div class="shape square">8</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Flex Start - Column</h2>
+      <div class="box short wrap align-content-flex-start column">
+        <div class="shape square">1</div>
+        <div class="shape square">2</div>
+        <div class="shape square">3</div>
+        <div class="shape square">4</div>
+        <div class="shape square">5</div>
+        <div class="shape square">6</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Flex End - Column</h2>
+      <div class="box short wrap align-content-flex-end column">
+        <div class="shape square">1</div>
+        <div class="shape square">2</div>
+        <div class="shape square">3</div>
+        <div class="shape square">4</div>
+        <div class="shape square">5</div>
+        <div class="shape square">6</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Center - Column</h2>
+      <div class="box short wrap align-content-center column">
+        <div class="shape square">1</div>
+        <div class="shape square">2</div>
+        <div class="shape square">3</div>
+        <div class="shape square">4</div>
+        <div class="shape square">5</div>
+        <div class="shape square">6</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Stretch - Column</h2>
+      <div class="box short column wrap align-content-stretch">
+        <div class="shape stretch-rectangle">1</div>
+        <div class="shape stretch-rectangle">2</div>
+        <div class="shape stretch-rectangle">3</div>
+        <div class="shape stretch-rectangle">4</div>
+        <div class="shape stretch-rectangle">5</div>
+        <div class="shape stretch-rectangle">6</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Space Between - Column</h2>
+      <div class="box short wrap align-content-space-between column">
+        <div class="shape square">1</div>
+        <div class="shape square">2</div>
+        <div class="shape square">3</div>
+        <div class="shape square">4</div>
+        <div class="shape square">5</div>
+        <div class="shape square">6</div>
+        <div class="shape square">7</div>
+        <div class="shape square">8</div>
+      </div>
+
+      <h2 title="Align Content">Align Content: Space Around - Column</h2>
+      <div class="box short wrap align-content-space-around column">
+        <div class="shape square">1</div>
+        <div class="shape square">2</div>
+        <div class="shape square">3</div>
+        <div class="shape square">4</div>
+        <div class="shape square">5</div>
+        <div class="shape square">6</div>
+        <div class="shape square">7</div>
+        <div class="shape square">8</div>
+      </div>
+    </section>
+
+    <!-- Children -->
+    <h1>Order <button onclick="hide(this, 'order')">Hide</button></h1>
+    <section id="order">
+      <h2 title="Order Normal">Order Normal</h2>
+      <div class="box justify-flex-start">
+        <div class="shape rectangle">1</div>
+        <div class="shape square">2</div>
+        <div class="shape rectangle">3</div>
+      </div>
+
+      <h2 title="Order Ridiculous">Order Ridiculous</h2>
+      <div class="box justify-flex-start">
+        <div class="shape rectangle order-3">1</div>
+        <div class="shape square order-1">2</div>
+        <div class="shape rectangle order-2">3</div>
+      </div>
+    </section>
+
+    <h1>Flex Grow <button onclick="hide(this, 'flexGrow')">Hide</button></h1>
+    <section id="flexGrow">
+      <h2 title="Flex Grow">Flex Grow - Row</h2>
+      <div class="box">
+        <div class="shape square">1</div>
+        <div class="shape square flex-grow">2</div>
+        <div class="shape square">3</div>
+      </div>
+
+      <h2 title="Flex Grow">Flex Grow - Column</h2>
+      <div class="box long column">
+        <div class="shape square">1</div>
+        <div class="shape square flex-grow">2</div>
+        <div class="shape square">3</div>
+      </div>
+    </section>
+
+    <h1>Flex Shrink <button onclick="hide(this, 'flexShrink')">Hide</button></h1>
+    <section id="flexShrink">
+      <h2 title="Flex Shrink">Flex Shrink - Row</h2>
+      <div class="box stout">
+        <div class="shape square">1</div>
+        <div class="shape square flex-shrink">2</div>
+        <div class="shape square">3</div>
+        <div class="shape square">4</div>
+      </div>
+
+      <h2 title="Flex Shrink">Flex Shrink - Column</h2>
+      <div class="box short column">
+        <div class="shape square">1</div>
+        <div class="shape square flex-shrink">2</div>
+        <div class="shape square">3</div>
+      </div>
+    </section>
+
+    <h1>Flex Basis <button onclick="hide(this, 'flexBasis')">Hide</button></h1>
+    <section id="flexBasis">
+      <h2 title="Flex Basis">Flex Basis - Row</h2>
+      <div class="box">
+        <div class="shape square">1</div>
+        <div class="shape square flex-basis-50">2</div>
+        <div class="shape square">3</div>
+        <div class="shape square">4</div>
+      </div>
+
+      <h2 title="Flex Basis">Flex Basis - Column</h2>
+      <div class="box long column">
+        <div class="shape square">1</div>
+        <div class="shape square flex-basis-50">2</div>
+        <div class="shape square">3</div>
+      </div>
+    </section>
+
+    <h1>Flex <button onclick="hide(this, 'flex')">Hide</button></h1>
+    <section id="flex">
+      <h2 title="Flex">Flex - Row</h2>
+      <div class="box">
+        <div class="shape square">1</div>
+        <div class="shape square flex-me-50">2</div>
+        <div class="shape square">3</div>
+        <div class="shape square">4</div>
+      </div>
+
+      <h2 title="Flex">Flex - Column</h2>
+      <div class="box long column">
+        <div class="shape square">1</div>
+        <div class="shape square flex-me-50">2</div>
+        <div class="shape square">3</div>
+      </div>
+    </section>
+
+    <h1>Align Self <button onclick="hide(this, 'alignSelf')">Hide</button></h1>
+    <section id="alignSelf">
+      <h2 title="Align Self">Align Self - Row</h2>
+      <div class="box row long">
+        <div class="shape square">1</div>
+        <div class="shape square align-self-flex-end">2</div>
+        <div class="shape square">3</div>
+        <div class="shape square">4</div>
+      </div>
+
+      <h2 title="Align Self">Align Self - Column</h2>
+      <div class="box column">
+        <div class="shape square">1</div>
+        <div class="shape square align-self-flex-end">2</div>
+        <div class="shape square">3</div>
       </div>
     </section>
   </div><!-- ./ Container -->
